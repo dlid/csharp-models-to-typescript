@@ -120,7 +120,7 @@ const createConverter = config => {
           returnType = `: ${returnType}`;
         }
 
-        return `    ${method.Name} (${params})${returnType}`;
+        return `    ${method.Name} (${params})${returnType};`;
     };
 
     const csharpTypeToTsType = CSharpTypeType => {
